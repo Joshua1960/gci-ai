@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCI Pathfinder</title>
+    <link rel="stylesheet" href="gci-ai.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <p class="logo">GCI PATHFINDER</p>
+    </div>
+    <div class="main-cont">
+      <div class="text-cont">
+        <p class="greeting">WELCOME TO</p>
+        <h1 class="heading">
+          GCI CAREER <br />
+          PATHFINDER AI
+        </h1>
+        <p class="sub-heading">
+          This is an artificial intelligence (AI) tool, for students to help
+          them navigate their career choices and make the right decision. With
+          this artificial intelligence (AI) you get useful information that will
+          aid your choice of career. We are here to help you. Cheer!
+        </p>
+      </div>
+      <div class="image-cont"><img src="./robot.png" alt="" /></div>
+      <div class="ai-cont">
+        <!-- Dialogflow integration -->
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          intent="WELCOME"
+          chat-title="Chatbot"
+          agent-id="1cdb9982-3c79-4980-b41b-cf4898b0d4dd"
+          language-code="en"
+        ></df-messenger>
+        <!-- Dialogflow integration -->
+      </div>
+    </div>
+  </body>
+</html>
